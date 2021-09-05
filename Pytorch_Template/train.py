@@ -137,7 +137,7 @@ def main(config):
         pass
     print(len(data_set))
     print(f"end set data_loader\n")
-
+    
     # build model architecture, then print to console
     model = config.init_obj('module', module_model)
     # prepare for (multi-device) GPU training
@@ -156,7 +156,10 @@ def main(config):
     # build optimizer, learning rate scheduler. delete every lines containing lr_scheduler for disabling scheduler
     trainable_params = filter(lambda p: p.requires_grad, model.parameters())\
     # FIXME : 커스텀 가능하게 수정
-    optimizer = AdamP(model.parameters(), lr=config["optimizer"]["args"]["lr"], betas=config["optimizer"]["args"]["betas"], weight_decay= config["optimizer"]["args"]["weight_decay"])
+    if config["optimizer"]["args"]["lr"] in ["AdamP", "SGDP"]:
+        pass
+    else:
+        optimizer = AdamP(model.parameters(), lr=config["optimizer"]["args"]["lr"], betas=config["optimizer"]["args"]["betas"], weight_decay= config["optimizer"]["args"]["weight_decay"])
     # optimizer = config.init_obj('optimizer', optim, trainable_params)
     # FIXME : 커스텀 가능하게 수정
     lr_scheduler = torch.optim.lr_scheduler.MultiStepLR(optimizer, milestones=config["lr_scheduler"]["args"]["milestones"], gamma=config["lr_scheduler"]["args"]["gamma"])
