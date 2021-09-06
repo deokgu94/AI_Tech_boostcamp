@@ -1,3 +1,6 @@
+[@https://openaccess.thecvf.com/content_CVPR_2019/papers/He_Bag_of_Tricks_for_Image_Classification_with_Convolutional_Neural_Networks_CVPR_2019_paper.pdf]
+
+
 나동빈 <꼼꼼한 논문 읽기 - Bag of Tricks for Image Classification with Convolutional Neural Networks (CVPR 2019)>
 
 - 모델 아키텍쳐의 선능 향상이 아닌 그외에 다른 파라미터를 변경해서 성능향상이 있다.
