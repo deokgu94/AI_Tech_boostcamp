@@ -28,6 +28,6 @@ OT
  - RandAugment: Practical automated data augmentation with a reduced search space [@https://arxiv.org/abs/1909.13719]
 
 3강: Image calssification 2
-
-
+읽고 싶은 논문:
+ - EfficientNet: Rethinking Model Scaling for Convolutional Neural Networks [@https://arxiv.org/pdf/1905.11946.pdf]
 
