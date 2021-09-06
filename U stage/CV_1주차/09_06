@@ -1,0 +1,33 @@
+
+OT
+오태현 마스터님, 
+
+컴퓨터 비젼 - 목차 : 
+ - 컴퓨터비젼이 무엇인지?: 사진이나 비디오등을 통해 장면의 본질을 파악한다.
+ 
+ 준 근형대사 강의
+ 딥러닝 기반 기술만 : 패러다임 시프트 
+ 영어 강의 자료: .... 영어 공부로 열심히 해야겠다. 영어 표현에 익숙해지면 영어 논문을 읽기 편하기때문에 영어로 통의하게 한다.
+  ㄴ 남들이 정리하는 자료만 기다리면 뒤쳐지게 된다. 스스로 물고기를 낚이기 위해 영어로 논문을 읽는 계기가 되었으면 좋겠다.
+  
+  
+ image classfication 1 
+  - 왜 컴퓨터비젼이 Ai에 속하는가:  시간이나 소리에 관련된 시각능력 이해까지 지능에 포함된다. 
+  AI: 사람의 지능을 컴튜터로 표현
+  
+  인공지능이 출력이 사람이 확인이 가능한거( 지각능력)
+
+1강: Image Calssification 1
+
+
+
+2강: Annatation Ddata Efficient Learning
+읽고 싶은 논문: 
+ - Self-Transfer Learning for Fully Weakly Supervised Object Localization [@https://arxiv.org/abs/1602.01625]
+ - The Simple and Efficient Semi-Supervised Learning Method for Deep Neural Networks [@http://citeseerx.ist.psu.edu/viewdoc/download;jsessionid=6EEAB47A6C95037AA28E470C740C16A3?doi=10.1.1.664.3543&rep=rep1&type=pdf]
+ - RandAugment: Practical automated data augmentation with a reduced search space [@https://arxiv.org/abs/1909.13719]
+
+3강: Image calssification 2
+
+
+
