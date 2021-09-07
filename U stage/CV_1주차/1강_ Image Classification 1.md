@@ -46,6 +46,9 @@ AI란 "사람의 지능을 컴퓨터 시스템으로 구현"
  - 지금은 사용하는 않는 (Local Response Normalization(LRN))사용 ::: 대신해서 Batch normalization을 사용한다. 
  - 11x11 convolution filter를 사용했다.     ::: Receptive field의 size를 쉽게 크게 만들기 위해서 사용했으나 지금은 사용하지 않음
  
+※ ReLu(Rectified Linear Unit): 입력값이 0보다 작으면 0, 0보다 크면 입력값 그대로 사용한다.
+ ![1_LiBZo_FcnKWqoU7M3GRKbA](https://user-images.githubusercontent.com/35412566/132292900-7a2e32c9-7ebd-4432-833f-fa6166764f4b.png)
+
  
 ※ Batch normalization: 배치 정규화는 평균과 분산을 조정하는 과정이 별도의 과정으로 떼어진 것이 아니라, 신경망 안에 포함되어 학습 시 평균과 분산을 조정하는 과정
   
