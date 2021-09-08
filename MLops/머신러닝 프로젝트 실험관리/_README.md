@@ -9,7 +9,8 @@ HPO를 설정할때  patch size, lr의 순서대로 설정하는게 더움이 �
 
 patch size를 작게해서 점수를 오르는 기간이였다. - https://iamseungjun.tistory.com/3
 
-DataLoader를 어떻게 하면 cpu를 적게 GPU를 많이 사용할 수 있을까.
+DataLoader를 어떻게 하면 cpu를 적게 GPU를 많이 사용할 수 있을까.(pin_memory 함께 공부해보자)
+
  ㄴ "Data Loader, Better, Faster, Stronger" : https://d2.naver.com/helloworld/3773258 
 
 파라미터 튜닝이 ML의 끝이자 꽃이다.  data set 버져닝 하는게 중요하다. 버젼별로 학습이랑 튜닝이 되어야 한다. 
