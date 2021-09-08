@@ -1,5 +1,5 @@
-# Polar plot [@https://matplotlib.org/stable/gallery/specialty_plots/radar_chart.html]
-
+# Polar plot 
+[@https://matplotlib.org/stable/gallery/specialty_plots/radar_chart.html]
 극 좌표계를 사용하는것
 
 x,y -> r(거리), z(각)(반지름, 각도)
