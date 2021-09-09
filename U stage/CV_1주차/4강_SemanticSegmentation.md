@@ -19,3 +19,4 @@ Image Classification에서는 영상 단위 -> Semant Segmentation에서는 Pixe
  
  
  
+![image](https://user-images.githubusercontent.com/35412566/132618773-d6923f13-4c49-434b-aa94-b83d88e60b25.png)
