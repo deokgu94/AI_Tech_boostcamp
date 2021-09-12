@@ -1,5 +1,10 @@
-[@https://openaccess.thecvf.com/content_CVPR_2019/papers/He_Bag_of_Tricks_for_Image_Classification_with_Convolutional_Neural_Networks_CVPR_2019_paper.pdf]
+## Bag of Tricks for Image Classification with Convolutional Neural Networks
+### Paper [Link](https://arxiv.org/pdf/1812.01187.pdf)
+___
+<br><br>
 
+# start
+[@https://openaccess.thecvf.com/content_CVPR_2019/papers/He_Bag_of_Tricks_for_Image_Classification_with_Convolutional_Neural_Networks_CVPR_2019_paper.pdf]
 
 
 
