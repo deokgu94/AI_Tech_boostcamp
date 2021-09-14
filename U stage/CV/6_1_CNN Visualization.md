@@ -135,8 +135,14 @@ Zeller가 (deconvent)사용한 방법은 backward할떄 gradient자체에 ReLu�
 ###  Grad-CAM - CAM에서 구조를 변경하지 않고 가능하게 함.
 back 
 
-Autograd가 뭔지.
- chain rule를 이용해서?
+
+### <면접 질문> 그래서 Auto grad가 뭔데 
+Pytorch 에서 제공하는 패키지로써, 간단하게 미분을 자동으로 계산해주는 기능입니다. 
+파이토치를 auto grad를 back ward하는 엔진이라고 하고, 이를 사용하는 것이 chain 을 사용합니다.
+auto grad를 back ward하는 엔진이라고 하고, 이를 사용하는 것이 chain 을 사용합니다.
+
+/eq 
+ 
 
 ___
 -- 읽어 볼 자료 
