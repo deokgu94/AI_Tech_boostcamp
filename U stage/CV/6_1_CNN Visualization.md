@@ -47,7 +47,7 @@ ___
 고차원 공간에서 visualization하기에는(검색된 예제를 통해서 분석하는 방법은): 전체적인 그림을 활용하기 어렵고, 너무 고차원이라 상상하기 힘들다.<br>
 이를 개선한 방법이 **차원 축소 방법**을 통해 보는 것.
 
-대표적인 방법으로 **[t-SNE](https://gaussian37.github.io/ml-concept-t_sne/)**이 있다. 
+대표적인 방법으로 [**t-SNE**](https://gaussian37.github.io/ml-concept-t_sne/)이 있다. 
 
 ```
 t-distributed stochastic neighbor embedding 소위 t-SNE라고 불리는 방법은 높은 차원의 복잡한 데이터를 2차원에 차원 축소하는 방법입니다. 
