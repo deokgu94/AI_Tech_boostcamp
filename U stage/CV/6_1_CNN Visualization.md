@@ -69,17 +69,49 @@ t-distributed stochastic neighbor embedding 소위 t-SNE라고 불리는 방법�
 ### [Class visualization](https://glassboxmedicine.com/2019/07/13/class-model-visualization-for-cnns/) - 예제 대이터를 사용하지 않고 Network가 내제하고 있는 이미지로 visualization
 최적화를 통해서(Gradient decent 등과)같이 영상 얻는다. 
 
-
-
 <br>
 
+![image](https://user-images.githubusercontent.com/35412566/133186353-dcfe2b8c-0f3f-4c5f-892c-b7a304ac80cc.png)
+
+이미지를 얻는 과정 
+1. 임의의 영상을 넣어서 타겟 클래스에 해당하는 에측 점수를 얻습니다. 
+2. Backpropagte를 통해서 클래스 점수가 높아지게 합니다. 
+3. 현재 이미지에 더합니다.(업데이트 합니다.) 이과정을 여러번 반복한다.
+
+<br>
 ___
 
 <br>
 
-
-## Model decision explanation
+## Model decision explanation 
+모델이 특정 입력을 보았을때 어떤 각도로 해석하고 있는지. 
 ### 3.1 Saliency test
+<br>
+
+### Occlusion map - 각 영상에대한 제대로 판정대기 위한 중요도를 판별
+![image](https://user-images.githubusercontent.com/35412566/133186656-49d087c6-1078-451f-a3fb-de5e60498b1b.png)
+위의 이미지에서는 코끼리의 이마? 부분의 중요도가 가장 높다. 
+
+### via Backpropagation - 최족적으로 결정지은 값을 출력
+![image](https://user-images.githubusercontent.com/35412566/133186989-2244c138-1579-43c2-8362-4bf3a1f53906.png)
+
+위의 이미지가 몽환적 이지만 특징들이 살아있다. 
+
+이미지를 얻는 과정
+1. 임의의 영상을 넣어서 클래스 점수를 얻는다.
+2. Backpropagte으로 입력 도메인의 gradient을 구한다.
+3. gradient에 절대값, 제곱하여 절대적인 크기를 구한다.(여러번 반복으로 얻어도 된다.)
+
+
+#### Class visualization vs via Backpropagation 차이점
+- 입력으로 의미없는 값을 입력하고, 현재 데이터에 의존한 값을 보려고 함.
+
 ### 3.2 Backpropagate features
+
 ### 3.3 Class activation mapping
 
+
+
+___
+-- 읽어 볼 자료 
+- https://blogik.netlify.app/BoostCamp/U_stage/41_cnn_visualization/
