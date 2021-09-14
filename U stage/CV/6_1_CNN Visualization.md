@@ -135,6 +135,8 @@ Zeller가 (deconvent)사용한 방법은 backward할떄 gradient자체에 ReLu�
 ###  Grad-CAM - CAM에서 구조를 변경하지 않고 가능하게 함.
 back 
 
+Autograd가 뭔지.
+ chain rule를 이용해서?
 
 ___
 -- 읽어 볼 자료 
