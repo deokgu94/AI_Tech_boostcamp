@@ -1,3 +1,4 @@
+/* There is an exception handling for comments. */ 
 {
     "name": "Maske",
     "n_gpu": 1,
