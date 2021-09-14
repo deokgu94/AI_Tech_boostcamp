@@ -106,10 +106,34 @@ ___
 #### Class visualization vs via Backpropagation 차이점
 - 입력으로 의미없는 값을 입력하고, 현재 데이터에 의존한 값을 보려고 함.
 
+<br>
 ### 3.2 Backpropagate features
 
-### 3.3 Class activation mapping
+![image](https://user-images.githubusercontent.com/35412566/133191256-22b3e448-a0c0-4b59-856b-2577ed6630f3.png)
 
+Foward pass에서 음수가 나온 부분은 ReLu에 의해서 0으로 표현하게 됩니다.<br>
+
+이런 마스킹 패턴을 저장해 두었다가. backpropagation 할때 양수, 음수가 합쳐진 gradient가 오면 저장이 되어있던 마스크로 마스킹을 해준다. <br>
+
+Zeller가 (deconvent)사용한 방법은 backward할떄 gradient자체에 ReLu를 사용했다. <br>
+
+두번째와 세번째를 AND연상을 통해 합쳐 준다. 
+
+![image](https://user-images.githubusercontent.com/35412566/133192051-ad155b35-1ef3-472e-9c63-972f424d0454.png)
+깨끗하고 깨끗한 이미지를 결정한다. 
+양뱡향에서 클래스 결정에 도움이 되는 부분만 추출한게 : Guided backprop 
+
+### 3.3 Class activation mapping
+### CAM - 어떤 부분을 참조 했는지 heatmap으로 표현
+[CAM](https://www.google.com/search?q=class+activation+mapping&sxsrf=AOaemvLD1QQmYnN5mrafSe6r8cvo4Udeew%3A1631591781577&ei=ZR1AYcXjIqaVr7wPyPSZgAQ&oq=class+activation+mapping&gs_lcp=Cgxnd3Mtd2l6LXNlcnAQAzIFCAAQgAQyCggAEIAEEIcCEBQyBQgAEMsBMgUIABDLATIFCAAQywEyBQgAEIAEMgQIABAeMgQIABAeMgQIABAeMgQIABAeMgcIABAeEIsDMgkIABAFEB4QiwMyCQgAEAUQHhCLAzIJCAAQBRAeEIsDOgcIABBHELADOgQIIxAnOgQIABBDOgoIABCxAxCDARBDOg4IABCABBCxAxCDARCLAzoLCAAQgAQQsQMQiwM6BwgAEEMQiwM6DQgAELEDEIMBEEMQiwM6CAgAEIAEEIsDOgcIIxDqAhAnOgoIIxDqAhAnEIsDOgcIABCxAxBDOg0IABCABBCHAhCxAxAUOhMIABCABBCHAhCxAxCDARAUEIsDOhAIABCABBCHAhCxAxCDARAUOggIABCABBCxAzoLCAAQgAQQsQMQgwE6BwgjELECECc6CggAELEDELEDEAo6CggAELEDEIMBEAo6BwgAELEDEAo6DQgAELEDEIMBEAoQiwM6CggAELEDEAoQiwM6CggAEIAEEAoQiwM6BwgAEIAEEAo6BwgAEAoQywE6BAgAEAo6BwgAEAoQiwM6CggAEIAEELEDEAo6CAgAEMsBEIsDSgQIQRgAUM83WOFwYOdxaARwAngAgAF8iAHLGJIBBDAuMjiYAQCgAQGwAQ7IAQS4AQPAAQE&sclient=gws-wiz-serp&ved=0ahUKEwiFqryEyf3yAhWmyosBHUh6BkAQ4dUDCA4&uact=5): CNN의 일부를 개조하여 만듬. 
+<br>
+
+![image](https://user-images.githubusercontent.com/35412566/133192822-775b2bd7-8a13-4e35-8014-d854df9594cb.png)<br>
+영상인식만으로 위치도 찾을 수 있는 방법이다.
+구조를 변경해야하고, 
+
+###  Grad-CAM - CAM에서 구조를 변경하지 않고 가능하게 함.
+back 
 
 
 ___
