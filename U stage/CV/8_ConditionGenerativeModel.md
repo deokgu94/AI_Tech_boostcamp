@@ -16,3 +16,9 @@
 ## 2.3 Perceptual loss
 
 # 3. Various GAN applications
+
+
+<br>
+##필수 과제 3
+###TODO1 
+- [argparse](https://docs.python.org/ko/3/howto/argparse.html)
