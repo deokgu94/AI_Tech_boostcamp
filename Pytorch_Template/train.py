@@ -240,7 +240,7 @@ if __name__ == "__main__":
         type=str,
         help="indices of GPUs to enable (default: all)",
     )
-
+    # TODO: Check this code 
     # custom cli options to modify configuration from default values given in json file.
     CustomArgs = collections.namedtuple("CustomArgs", "flags type target")
     options = [
