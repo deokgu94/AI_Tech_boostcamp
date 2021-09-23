@@ -19,7 +19,8 @@ contracting path는 It consists of the repeated application of two 3x3 convoluti
 Every step in the expansive path consists of an upsampling of the feature map followed by a 2x2 convolution (“up-convolution”) that halves the number of feature channels,a concatenation with the correspondingly cropped feature map from the contracting path, and two 3x3 convolutions, each followed by a ReLU [paper 4page]
 <br>
 
-Q. 그래서 tiling은 어떻게 적용하는 걸까?
+Q. 그래서 tiling은 어떻게 적용하는 걸까? <br>
+F. BatchNorm2d 왜 하는걸까?
 
 ## 3. Training
 To minimize the overhead and make maximum use of the GPU memory, we favor large input tiles over a large batch size and hence reduce the batch to a single image. Accordingly we use a high **momentum (0.99)** such that a large number of the previously seen training samples determine theupdate in the current optimization step
@@ -29,6 +30,4 @@ To minimize the overhead and make maximum use of the GPU memory, we favor large 
 
 **We generate smooth deformations using random displacement vectors on a coarse 3 by 3 grid. The displacements are sampled from a Gaussian distribution with 10 pixels standard deviation.** Per-pixel displacements are then computed using bicubic interpolation. Drop-out layers at the end of the contracting path perform further implicit data augmentation.
 <br>
-
-
 
